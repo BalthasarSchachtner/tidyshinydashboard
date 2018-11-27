@@ -13,3 +13,5 @@ RUN r -e 'install.packages("ggalluvial", dependencies=TRUE)'
 # RUN r -e 'install.packages("dbplyr", dependencies=TRUE)'
 RUN r -e 'install.packages("plotly", dependencies=TRUE)'
 RUN r -e 'install.packages("RPostgreSQL", dependencies=TRUE)'
+
+ADD shiny-server.conf /etc/shiny-server/
